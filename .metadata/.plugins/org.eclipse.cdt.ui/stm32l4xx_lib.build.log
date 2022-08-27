@@ -1,0 +1,6 @@
+15:44:51 **** Incremental Build of configuration Debug for project stm32l4xx_lib ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+15:44:52 Build Finished. 0 errors, 0 warnings. (took 1s.82ms)
+

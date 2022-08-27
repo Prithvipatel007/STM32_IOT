@@ -1,0 +1,18 @@
+15:44:54 **** Incremental Build of configuration Debug for project sample_azure_iot_embedded_sdk ****
+make -j8 all 
+arm-none-eabi-gcc "../main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32L4S5xx -DDEMO_DHCP_DISABLE -DSTM32 -DB_L475E_IOT01A1 -DSTM32L4S5VITx -DENABLE_DPS_SAMPLE -c -I../../threadx/common/inc -I../../threadx/ports/cortex_m4/gnu/inc -I../../netxduo/ports/cortex_m4/gnu/inc -I../../netxduo/nx_secure/inc -I../../netxduo/nx_secure/ports -I../../netxduo/crypto_libraries/inc -I../../netxduo/common/inc -I../../netxduo/addons/dns -I../../netxduo/addons/mqtt -I../../netxduo/addons/cloud -I../../netxduo/addons/sntp -I../../stm32l4xx_lib/CMSIS/Device/ST/STM32L4xx/Include -I../../stm32l4xx_lib/CMSIS/Include -I../../stm32l4xx_lib -I../../common_hardware_code -I"../../netxduo/addons/azure_iot/azure-sdk-for-c/sdk/inc" -I"../../netxduo/addons/azure_iot" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"main.d" -MT"main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "main.o"
+arm-none-eabi-gcc "../sample_azure_iot_embedded_sdk.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32L4S5xx -DDEMO_DHCP_DISABLE -DSTM32 -DB_L475E_IOT01A1 -DSTM32L4S5VITx -DENABLE_DPS_SAMPLE -c -I../../threadx/common/inc -I../../threadx/ports/cortex_m4/gnu/inc -I../../netxduo/ports/cortex_m4/gnu/inc -I../../netxduo/nx_secure/inc -I../../netxduo/nx_secure/ports -I../../netxduo/crypto_libraries/inc -I../../netxduo/common/inc -I../../netxduo/addons/dns -I../../netxduo/addons/mqtt -I../../netxduo/addons/cloud -I../../netxduo/addons/sntp -I../../stm32l4xx_lib/CMSIS/Device/ST/STM32L4xx/Include -I../../stm32l4xx_lib/CMSIS/Include -I../../stm32l4xx_lib -I../../common_hardware_code -I"../../netxduo/addons/azure_iot/azure-sdk-for-c/sdk/inc" -I"../../netxduo/addons/azure_iot" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"sample_azure_iot_embedded_sdk.d" -MT"sample_azure_iot_embedded_sdk.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "sample_azure_iot_embedded_sdk.o"
+arm-none-eabi-gcc -o "sample_azure_iot_embedded_sdk.elf" @"objects.list"  -lnetxduo -lthreadx -lstm32l4xx_lib -mcpu=cortex-m4 -T"C:\Users\prithvi.patel\Downloads\Compressed\Azure_RTOS_6.1_STM32L4+-DISCO_STM32CubeIDE_Samples_2021_11_03\b-l4s5i-iot01a\stm32cubeide\common_hardware_code\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sample_azure_iot_embedded_sdk.map" -Wl,--gc-sections -static -L../../threadx/Debug -L../../netxduo/Debug -L../../stm32l4xx_lib/Debug --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sample_azure_iot_embedded_sdk.elf
+ 
+arm-none-eabi-size   sample_azure_iot_embedded_sdk.elf 
+arm-none-eabi-objdump -h -S  sample_azure_iot_embedded_sdk.elf  > "sample_azure_iot_embedded_sdk.list"
+   text	   data	    bss	    dec	    hex	filename
+ 361696	   2216	 119128	 483040	  75ee0	sample_azure_iot_embedded_sdk.elf
+Finished building: default.size.stdout
+ 
+Finished building: sample_azure_iot_embedded_sdk.list
+ 
+
+15:45:03 Build Finished. 0 errors, 0 warnings. (took 9s.253ms)
+

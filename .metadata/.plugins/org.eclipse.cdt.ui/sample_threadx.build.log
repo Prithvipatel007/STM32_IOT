@@ -1,0 +1,22 @@
+14:45:27 **** Build of configuration Debug for project sample_threadx ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/prithvi.patel/Downloads/Compressed/Azure_RTOS_6.1_STM32L4+-DISCO_STM32CubeIDE_Samples_2021_11_03/b-l4s5i-iot01a/stm32cubeide/common_hardware_code/board_setup.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4PLUS -DSTM32L4S5xx -DSTM32L4S5VITx -DSTM32 -c -I../../threadx/common -I../../threadx/common/inc -I../../threadx/ports/cortex_m4/gnu/inc -I../../stm32l4xx_lib/CMSIS/Include -I../../stm32l4xx_lib/CMSIS/Device/ST/STM32L4xx/Include -I../../stm32l4xx_lib -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common_hardware_code/board_setup.d" -MT"common_hardware_code/board_setup.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common_hardware_code/board_setup.o"
+arm-none-eabi-gcc "C:/Users/prithvi.patel/Downloads/Compressed/Azure_RTOS_6.1_STM32L4+-DISCO_STM32CubeIDE_Samples_2021_11_03/b-l4s5i-iot01a/stm32cubeide/common_hardware_code/es_wifi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4PLUS -DSTM32L4S5xx -DSTM32L4S5VITx -DSTM32 -c -I../../threadx/common -I../../threadx/common/inc -I../../threadx/ports/cortex_m4/gnu/inc -I../../stm32l4xx_lib/CMSIS/Include -I../../stm32l4xx_lib/CMSIS/Device/ST/STM32L4xx/Include -I../../stm32l4xx_lib -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common_hardware_code/es_wifi.d" -MT"common_hardware_code/es_wifi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common_hardware_code/es_wifi.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"common_hardware_code/startup_stm32l4s5vitx.d" -MT"common_hardware_code/startup_stm32l4s5vitx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common_hardware_code/startup_stm32l4s5vitx.o" "C:/Users/prithvi.patel/Downloads/Compressed/Azure_RTOS_6.1_STM32L4+-DISCO_STM32CubeIDE_Samples_2021_11_03/b-l4s5i-iot01a/stm32cubeide/common_hardware_code/startup_stm32l4s5vitx.s"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"common_hardware_code/tx_initialize_low_level.d" -MT"common_hardware_code/tx_initialize_low_level.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common_hardware_code/tx_initialize_low_level.o" "C:/Users/prithvi.patel/Downloads/Compressed/Azure_RTOS_6.1_STM32L4+-DISCO_STM32CubeIDE_Samples_2021_11_03/b-l4s5i-iot01a/stm32cubeide/common_hardware_code/tx_initialize_low_level.S"
+arm-none-eabi-gcc "C:/Users/prithvi.patel/Downloads/Compressed/Azure_RTOS_6.1_STM32L4+-DISCO_STM32CubeIDE_Samples_2021_11_03/b-l4s5i-iot01a/stm32cubeide/common_hardware_code/wifi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4PLUS -DSTM32L4S5xx -DSTM32L4S5VITx -DSTM32 -c -I../../threadx/common -I../../threadx/common/inc -I../../threadx/ports/cortex_m4/gnu/inc -I../../stm32l4xx_lib/CMSIS/Include -I../../stm32l4xx_lib/CMSIS/Device/ST/STM32L4xx/Include -I../../stm32l4xx_lib -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common_hardware_code/wifi.d" -MT"common_hardware_code/wifi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common_hardware_code/wifi.o"
+arm-none-eabi-gcc "../sample_threadx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4PLUS -DSTM32L4S5xx -DSTM32L4S5VITx -DSTM32 -c -I../../threadx/common -I../../threadx/common/inc -I../../threadx/ports/cortex_m4/gnu/inc -I../../stm32l4xx_lib/CMSIS/Include -I../../stm32l4xx_lib/CMSIS/Device/ST/STM32L4xx/Include -I../../stm32l4xx_lib -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"sample_threadx.d" -MT"sample_threadx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "sample_threadx.o"
+arm-none-eabi-gcc -o "sample_threadx.elf" @"objects.list"  -lthreadx -lstm32l4xx_lib -mcpu=cortex-m4 -T"../../common_hardware_code/STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sample_threadx.map" -Wl,--gc-sections -static -L../../threadx/Debug -L../../stm32l4xx_lib/Debug --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sample_threadx.elf
+ 
+arm-none-eabi-size   sample_threadx.elf 
+arm-none-eabi-objdump -h -S  sample_threadx.elf  > "sample_threadx.list"
+   text	   data	    bss	    dec	    hex	filename
+  54608	    184	   7624	  62416	   f3d0	sample_threadx.elf
+Finished building: default.size.stdout
+ 
+Finished building: sample_threadx.list
+ 
+
+14:45:31 Build Finished. 0 errors, 0 warnings. (took 3s.735ms)
+

@@ -1,0 +1,10 @@
+19:32:45 **** Incremental Build of configuration Debug for project prov_dev_client ****
+make -j8 all 
+arm-none-eabi-size   prov_dev_client.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5600	     20	   1572	   7192	   1c18	prov_dev_client.elf
+Finished building: default.size.stdout
+ 
+
+19:32:45 Build Finished. 0 errors, 0 warnings. (took 786ms)
+
